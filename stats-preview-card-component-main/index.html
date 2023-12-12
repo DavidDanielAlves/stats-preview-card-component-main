@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>insights</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        colors: {
+          branco: '#ffffff',
+          paragraf: 'hsla(0, 0%, 100%, 0.75)',
+          azul:{
+            fundo: 'hsl(233, 47%, 7%)',
+            card: 'hsl(244, 38%, 16%)',
+            insights: 'hsl(277, 64%, 61%)'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-azul-fundo h-screen flex flex-col justify-center items-center">
+   <main class="bg-azul-card w-4/5 h-auto text-center  rounded-b-lg  lg:flex lg:flex-row-reverse lg:rounded-none lg:rounded-l-lg">
+      <img class="rounded-t-lg lg:w-1/2 lg:rounded-none lg:rounded-r-lg" src="images/image-header-mobile.jpg" alt="pessoas em um escritorio e felizes">
+      <div class="p-6 lg:w-1/2 lg:flex lg:flex-col lg:justify-center">
+        <h1 class="text-branco text-2xl font-medium mb-4">Get <strong class="text-azul-insights">insights</strong> that help your business grow.</h1>
+        <p class="text-paragraf text-sm mb-4">Discover the benefits of data analytics and make better descisions reagrading revenue, customer experience, and overall efficiency.</p>
+        <div class="lg:flex justify-around lg:items-center">
+          <div class="text-center ">
+            <h2 class="font-medium text-branco text-2xl">10k+</h2>
+            <p class="text-paragraf mb-4 uppercase lg:mb-0">companies</p>
+          </div>
+          <div class="text-center">
+            <h3 class="font-medium text-branco text-2xl ">314</h3>
+            <p class="text-paragraf mb-4 uppercase lg:mb-0">templates</p>
+          </div>
+          <div class="text-center">
+            <h4 class="font-medium text-branco text-2xl">12M+</h4>
+            <p class="text-paragraf uppercase">queries</p>
+          </div>
+        </div>
+      </div>
+   </main>
+</body>
+</html>
